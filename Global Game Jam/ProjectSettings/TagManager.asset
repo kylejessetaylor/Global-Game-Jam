@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 1524580933
+    locked: 0
+  - name: Explosion
+    uniqueID: 2865045083
+    locked: 0
+  - name: People
+    uniqueID: 1419191497
+    locked: 0
+  - name: Button
+    uniqueID: 730446415
+    locked: 0
