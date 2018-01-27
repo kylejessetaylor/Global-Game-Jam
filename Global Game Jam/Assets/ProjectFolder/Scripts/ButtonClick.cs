@@ -9,14 +9,19 @@ public class ButtonClick : MonoBehaviour
 
     public bool land;
 
-
     public int m_nPopulation;
     public bool playerLocation;
+
+	public Text textDialogue;
+	public string startDialogue;
+	public string endDialogue;
 
     // Use this for initialization
     void Awake()
     {
-        m_nPopulation = Random.Range(buttonStats.m_nMinimumPopulation, buttonStats.m_nMaximumPopulation);
+        m_nPopulation = Random.Range(buttonStats.m_nMinimumPopulation-1, buttonStats.m_nMaximumPopulation+1);
+		startDialogue = buttonStats.startDialogue;
+		endDialogue = buttonStats.endDialogue;
 	}
 	
 	// Update is called once per frame
@@ -31,15 +36,16 @@ public class ButtonClick : MonoBehaviour
         // cue animation, directed somehow to transform.position of this button.
 
         //static score value += GetComponent<ButtonData>().population;
-        if (GetComponent<ButtonData>().playerLocation)
+        if (playerLocation == true)
         {
             // player has been found,
             // end game sstuff.
+			//textDialogue = 
         }
         else
         {
             // player has not been found
-            // text cue
+//			textDialogue = startDialogue + m_nPopulation + endDialogue;
             // sonar(?) pointing in general direction of player || hot/cold display.
         }
     }
