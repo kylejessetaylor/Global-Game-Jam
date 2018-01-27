@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212352403220707712}
   - component: {fileID: 95589531683755988}
   - component: {fileID: 61335774896080928}
+  - component: {fileID: 114649494107048958}
   m_Layer: 0
   m_Name: Person
   m_TagString: People
@@ -84,6 +85,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114649494107048958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1015244711910274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cf8af3723891349a102a200156ca8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkMin: 2
+  walkMax: 5
+  idleMin: 2
+  idleMax: 7
+  anim: {fileID: 0}
+  isMoving: 0
 --- !u!212 &212352403220707712
 SpriteRenderer:
   m_ObjectHideFlags: 1
