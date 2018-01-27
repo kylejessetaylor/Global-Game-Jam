@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   land: 0
   m_nMinimumPopulation: 0
-  m_nMaximumPopulation: 0
+  m_nMaximumPopulation: 3000
   startDialogue: 
   endDialogue: 

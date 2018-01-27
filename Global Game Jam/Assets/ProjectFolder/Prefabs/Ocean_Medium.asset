@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Ocean_Medium
   m_EditorClassIdentifier: 
   land: 0
-  m_nMinimumPopulation: 0
-  m_nMaximumPopulation: 0
+  m_nMinimumPopulation: 200000
+  m_nMaximumPopulation: 600000
   startDialogue: 
   endDialogue: 

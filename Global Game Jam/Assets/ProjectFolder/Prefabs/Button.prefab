@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114514071199579394}
   - component: {fileID: 114747941952833922}
   - component: {fileID: 61312963579289436}
+  - component: {fileID: 50838747220773950}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -31,6 +32,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!50 &50838747220773950
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576619186179578}
+  m_BodyType: 1
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61312963579289436
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -119,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ef7d3e8d41c184b859fdda5cf1c9b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonStats: {fileID: 11400000, guid: 0d1f2b03bdd7ad6489824fb32d1838c7, type: 2}
+  buttonStats: {fileID: 0}
   land: 0
   m_nPopulation: 0
   playerLocation: 0
