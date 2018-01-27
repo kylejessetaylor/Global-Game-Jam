@@ -17,11 +17,12 @@ public class DestroyTimer : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        Destroy(gameObject, m_fTimer);
-        if(m_goOptionalSpawn)
-        {
-            PauseExplosion(3.1f);
-        }
+		if(m_goOptionalSpawn)
+		{
+			StartCoroutine(PauseExplosion(m_fTimer));
+		}
+		Destroy(gameObject, m_fTimer);
+        
     }
     IEnumerator PauseExplosion(float time)
     {

@@ -141,12 +141,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonStats: {fileID: 0}
+  m_fTimer: 0
+  m_bFirstBang: 0
+  m_bClick: 0
   land: 0
   m_nPopulation: 0
   playerLocation: 0
   textDialogue: {fileID: 0}
   startDialogue: 
   endDialogue: 
+  m_goNuke: {fileID: 1326683433649818, guid: 5e90148f5ecca2b46905f632821864ba, type: 2}
+  m_goExplosion: {fileID: 0}
+  m_nLastClickKillCount: 0
 --- !u!114 &114808928085431948
 MonoBehaviour:
   m_ObjectHideFlags: 1
