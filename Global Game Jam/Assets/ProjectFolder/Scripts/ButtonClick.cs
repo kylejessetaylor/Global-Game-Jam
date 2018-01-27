@@ -72,11 +72,7 @@ public class ButtonClick : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         m_bFirstBang = false;
-        GameObject goNuke = m_goNuke;
-        goNuke.transform.position = new Vector3(transform.position.x,transform.position.y, -0.1f);
-        Instantiate(goNuke);
-        Destroy(goNuke, 3.2f);
-        PauseExplosion(3.2f);
+       
         Boom();
     }
 
@@ -87,15 +83,22 @@ public class ButtonClick : MonoBehaviour
         goExplosion.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
         Instantiate(goExplosion);
         // time to particle effect
-        Destroy(goExplosion, 3.2f);
     }
 
     public void Boom()
     {
+        // this button will no longer be interactable
         GetComponent<Button>().interactable = false;
-        // cue animation, directed somehow to transform.position of this button.
+        // instantiate a nuke
+        GameObject goNuke = m_goNuke;
+        // Set it's position
+        goNuke.transform.position = new Vector3(transform.position.x - 0.625f, transform.position.y - 1.03f, -0.1f);
+        Instantiate(goNuke);
+        // Start Running PauseExplosion
+        PauseExplosion(3.2f);
 
-        //static score value += GetComponent<ButtonData>().population;
+        //static score value += m_nPopulation + (m_nKillCount * 0.2);
+
         if (playerLocation == true)
         {
             // player has been found,
